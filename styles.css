@@ -112,3 +112,93 @@ button:hover {
     border-radius: 8px;
     margin-top: 20px;
 }
+
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #4CAF50;
+}
+
+
+.post {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.post h3 {
+    margin-top: 0;
+}
+.post a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.post a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+
+
+
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.video-item {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.video-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+
+
+.faq h3 {
+    cursor: pointer;
+    margin: 10px 0;
+}
+.faq p {
+    display: none;
+    margin: 0;
+}
+.faq h3.active + p {
+    display: block;
+}
+
+
+
+
+.news h3 {
+    margin: 10px 0;
+}
+.news a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+.news a:hover {
+    text-decoration: underline;
+}
+
+
+
