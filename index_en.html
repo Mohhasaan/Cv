@@ -10,13 +10,14 @@
 </head>
 <body>
     <header>
-        <h1>DR Mohamed Hasaan</h1>
+        <h1>Dr Mohamed Hasaan</h1>
         <nav>
             <ul>
-                <li><a href="index_en.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                 <li><a href="cv_en.html"><i class="fas fa-user"></i> CV</a></li>
                 <li><a href="work_en.html"><i class="fas fa-briefcase"></i> Work</a></li>
                 <li><a href="contact_en.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="blog_en.php"><i class="fas fa-blog"></i> Blog</a></li>
                 <li><a href="index.html"><i class="fas fa-globe"></i> العربية</a></li>
             </ul>
         </nav>
@@ -24,47 +25,68 @@
     <div class="content">
         <div class="card">
             <h2>About Me</h2>
-            <p>I am a dentist specializing in [your specialty]. I have extensive experience in [your expertise].</p>
+            <p>I am a dentist specializing in [Your Specialty]. I have extensive experience in [Your Expertise].</p>
+        </div>
+        <div class="card">
+            <h2>Client Testimonials</h2>
+            <div class="testimonial">
+                <p>"Dr. Mohamed Ashraf is the best! My experience was wonderful."</p>
+                <p>- Happy Client</p>
+            </div>
+            <div class="testimonial">
+                <p>"Excellent service and amazing results."</p>
+                <p>- Another Client</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>FAQ</h2>
+            <div class="faq">
+                <h3>Question 1</h3>
+                <p>Answer to question 1...</p>
+                <h3>Question 2</h3>
+                <p>Answer to question 2...</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Latest News</h2>
+            <div class="news">
+                <h3>News Title 1</h3>
+                <p>Short introduction to the news...</p>
+                <a href="#">Read more</a>
+                <h3>News Title 2</h3>
+                <p>Short introduction to the news...</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Services</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>Service 1</h3>
+                    <p>Description of service 1...</p>
+                </div>
+                <div class="service-item">
+                    <h3>Service 2</h3>
+                    <p>Description of service 2...</p>
+                </div>
+            </div>
         </div>
     </div>
-
-        <div class="card">
-    <h2>شهادات العملاء</h2>
-    <div class="testimonial">
-        <p>"دكتور محمد أشرف هو الأفضل! لقد كانت تجربتي رائعة."</p>
-        <p>- عميل سعيد</p>
-    </div>
-    <div class="testimonial">
-        <p>"خدمة ممتازة ونتائج مذهلة."</p>
-        <p>- عميل آخر</p>
-    </div>
-</div>
-
-    <div class="card">
-    <h2>آخر الأخبار</h2>
-    <div class="news">
-        <h3>عنوان الخبر 1</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-        <h3>عنوان الخبر 2</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-    </div>
-</div>
-
-<div class="card">
-    <h2>آخر الأخبار</h2>
-    <div class="news">
-        <h3>عنوان الخبر 1</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-        <h3>عنوان الخبر 2</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-    </div>
-</div>
     <footer>
         <p>© 2024 All rights reserved</p>
     </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
