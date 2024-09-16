@@ -10,13 +10,14 @@
 </head>
 <body>
     <header>
-        <h1>DR Mohamed Hasaan</h1>
+        <h1>مرحبًا بكم في موقع طب الأسنان الخاص بي</h1>
         <nav>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
                 <li><a href="cv.html"><i class="fas fa-user"></i> السيرة الذاتية</a></li>
                 <li><a href="work.html"><i class="fas fa-briefcase"></i> أعمالي</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بي</a></li>
+                <li><a href="blog.html"><i class="fas fa-blog"></i> المدونة</a></li>
                 <li><a href="index_en.html"><i class="fas fa-globe"></i> English</a></li>
             </ul>
         </nav>
@@ -26,69 +27,66 @@
             <h2>عنّي</h2>
             <p>أنا طبيب أسنان متخصص في [مجال تخصصك]. لدي خبرة واسعة في [مجال خبرتك].</p>
         </div>
+        <div class="card">
+            <h2>شهادات العملاء</h2>
+            <div class="testimonial">
+                <p>"دكتور محمد أشرف هو الأفضل! لقد كانت تجربتي رائعة."</p>
+                <p>- عميل سعيد</p>
+            </div>
+            <div class="testimonial">
+                <p>"خدمة ممتازة ونتائج مذهلة."</p>
+                <p>- عميل آخر</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq">
+                <h3>سؤال 1</h3>
+                <p>إجابة السؤال 1...</p>
+                <h3>سؤال 2</h3>
+                <p>إجابة السؤال 2...</p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>آخر الأخبار</h2>
+            <div class="news">
+                <h3>عنوان الخبر 1</h3>
+                <p>مقدمة قصيرة عن الخبر...</p>
+                <a href="#">اقرأ المزيد</a>
+                <h3>عنوان الخبر 2</h3>
+                <p>مقدمة قصيرة عن الخبر...</p>
+                <a href="#">اقرأ المزيد</a>
+            </div>
+        </div>
+        <div class="card">
+            <h2>الخدمات</h2>
+            <div class="services">
+                <div class="service-item">
+                    <h3>خدمة 1</h3>
+                    <p>وصف الخدمة 1...</p>
+                </div>
+                <div class="service-item">
+                    <h3>خدمة 2</h3>
+                    <p>وصف الخدمة 2...</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-    <h2>شهادات العملاء</h2>
-    <div class="testimonial">
-        <p>"دكتور محمد أشرف هو الأفضل! لقد كانت تجربتي رائعة."</p>
-        <p>- عميل سعيد</p>
-    </div>
-    <div class="testimonial">
-        <p>"خدمة ممتازة ونتائج مذهلة."</p>
-        <p>- عميل آخر</p>
-    </div>
-</div>
-
-    <div class="card">
-    <h2>آخر الأخبار</h2>
-    <div class="news">
-        <h3>عنوان الخبر 1</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-        <h3>عنوان الخبر 2</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-    </div>
-</div>
-
-<div class="card">
-    <h2>آخر الأخبار</h2>
-    <div class="news">
-        <h3>عنوان الخبر 1</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-        <h3>عنوان الخبر 2</h3>
-        <p>مقدمة قصيرة عن الخبر...</p>
-        <a href="#">اقرأ المزيد</a>
-    </div>
-</div>
-<script>
-    document.querySelectorAll('.faq h3').forEach(question => {
-        question.addEventListener('click', () => {
-            question.classList.toggle('active');
-            const answer = question.nextElementSibling;
-            if (answer.style.display === 'block') {
-                answer.style.display = 'none';
-            } else {
-                answer.style.display = 'block';
-            }
-        });
-    });
-</script>
-
-    <div class="card">
-    <h2>الأسئلة الشائعة</h2>
-    <div class="faq">
-        <h3>سؤال 1</h3>
-        <p>إجابة السؤال 1...</p>
-        <h3>سؤال 2</h3>
-        <p>إجابة السؤال 2...</p>
-    </div>
-</div>
-
-    
     <footer>
-        <p>&copy; 2024 جميع الحقوق محفوظة</p>
+        <p>© 2024 جميع الحقوق محفوظة</p>
     </footer>
+    <script>
+        document.querySelectorAll('.faq h3').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                } else {
+                    answer.style.display = 'block';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
