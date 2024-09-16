@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index_en.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="cv_en.html"><i class="fas fa-user"></i> CV</a></li>
+                <li><a href="work_en.html"><i class="fas fa-briefcase"></i> Work</a></li>
+                <li><a href="contact_en.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="contact.html"><i class="fas fa-globe"></i> العربية</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2>Contact Form</h2>
+            <form action="send_message.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="card">
+            <h2>Clinic Location</h2>
+            <div id="map"></div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 All rights reserved</p>
+    </footer>
+    <script>
+        function initMap() {
+            var clinicLocation = {lat: 30.0444, lng: 31.2357}; // Update coordinates to your clinic location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: clinicLocation
+            });
+            var marker = new google.maps.Marker({
+                position: clinicLocation,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>
