@@ -6,7 +6,6 @@
     <title>المدونة</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -17,23 +16,27 @@
                 <li><a href="cv.html"><i class="fas fa-user"></i> السيرة الذاتية</a></li>
                 <li><a href="work.html"><i class="fas fa-briefcase"></i> أعمالي</a></li>
                 <li><a href="contact.html"><i class="fas fa-envelope"></i> اتصل بي</a></li>
-                <li><a href="blog.html"><i class="fas fa-blog"></i> المدونة</a></li>
+                <li><a href="blog.php"><i class="fas fa-blog"></i> المدونة</a></li>
+                <li><a href="blog_en.php"><i class="fas fa-globe"></i> English</a></li>
             </ul>
         </nav>
     </header>
     <div class="content">
         <div class="card">
             <h2>أحدث المقالات</h2>
-            <div class="post">
-                <h3>عنوان المقال الأول</h3>
-                <p>مقدمة قصيرة عن المقال...</p>
-                <a href="#">اقرأ المزيد</a>
-            </div>
-            <div class="post">
-                <h3>عنوان المقال الثاني</h3>
-                <p>مقدمة قصيرة عن المقال...</p>
-                <a href="#">اقرأ المزيد</a>
-            </div>
+            <?php
+            $posts = [
+                ["title" => "عنوان المقال الأول", "intro" => "مقدمة قصيرة عن المقال...", "link" => "#"],
+                ["title" => "عنوان المقال الثاني", "intro" => "مقدمة قصيرة عن المقال...", "link" => "#"]
+            ];
+            foreach ($posts as $post) {
+                echo "<div class='post'>";
+                echo "<h3>{$post['title']}</h3>";
+                echo "<p>{$post['intro']}</p>";
+                echo "<a href='{$post['link']}'>اقرأ المزيد</a>";
+                echo "</div>";
+            }
+            ?>
         </div>
     </div>
     <footer>
