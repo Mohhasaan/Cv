@@ -24,19 +24,7 @@
     <div class="content">
         <div class="card">
             <h2>أحدث المقالات</h2>
-            <?php
-            $posts = [
-                ["title" => "عنوان المقال الأول", "intro" => "مقدمة قصيرة عن المقال...", "link" => "#"],
-                ["title" => "عنوان المقال الثاني", "intro" => "مقدمة قصيرة عن المقال...", "link" => "#"]
-            ];
-            foreach ($posts as $post) {
-                echo "<div class='post'>";
-                echo "<h3>{$post['title']}</h3>";
-                echo "<p>{$post['intro']}</p>";
-                echo "<a href='{$post['link']}'>اقرأ المزيد</a>";
-                echo "</div>";
-            }
-            ?>
+            <?php include 'fetch_data.php'; ?>
         </div>
     </div>
     <footer>
